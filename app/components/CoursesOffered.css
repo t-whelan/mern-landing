@@ -1,0 +1,68 @@
+.courses-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .courses-container {
+    text-align: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .course-card {
+    background-color: #ffffff;
+    border: 1px solid #28a745; /* Green border */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px);
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #28a745; /* Green color for price */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center; /* Center the check icon vertically */
+    margin: 5px 0; /* Space between features */
+  }
+  
+  .check-icon {
+    color: #28a745; /* Green color for check icon */
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Size of the check icon */
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .course-card {
+      width: calc(33.33% - 40px); /* 3 cards in a row */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .course-card {
+      width: calc(100% - 40px); /* Stack cards on small screens */
+    }
+  }
+  

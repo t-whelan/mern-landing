@@ -1,0 +1,33 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(63, 139, 54);
+}
+.logo {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a {
+    font-size: 15px;
+    color: rgb(5, 16, 49);
+    text-decoration: none;
+}
+.navbar a:hover{
+   color: rgb(63, 139, 54);
+}
+
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+}
