@@ -40,14 +40,14 @@ const CoursesOffered = () => {
   return (
     <div className="courses-section">
       <div className="courses-container">
-        <h2 className='text-2xl font-mono'>Courses Offered</h2>
-        <p className='text-xl font-mono'>Duration of course: 9 months - 1 hour class (Mon-Fri), Time: 3:30 PM to 4:30 PM (SAST)</p>
+        <h2 className='text-2xl  text-black font-mono'>Courses Offered</h2>
+        <p className='text-xl  text-black font-mono'>Duration of course: 9 months - 1 hour class (Mon-Fri), Time: 3:30 PM to 4:30 PM (SAST)</p>
         <div className="cards-container">
           {courses.map((course, index) => (
             <div className="course-card" key={index}>
               <h3>{course.title}</h3>
               <p className="price">{course.price}</p>
-              <ul>
+              <ul  className='text-black'>
                 {course.features.map((feature, idx) => (
                   <li key={idx} className="feature-item">
                     <span className="check-icon">&#10003;</span> {/* Check icon */}
