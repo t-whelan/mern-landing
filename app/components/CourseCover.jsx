@@ -26,16 +26,16 @@ const CourseCover = () => {
 
       <div className="topic-section">
         <h3 className='font-sans text-xl'>FrontEnd</h3>
-        <div className="bubble-container">
+        <div className="bubble-container text-blue-950">
           {topics.frontEnd.map((topic, index) => (
-            <div className="bubble" key={index}>{topic}</div>
+            <div className="bubble text-blue-950" key={index}>{topic}</div>
           ))}
         </div>
       </div>
 
       <div className="topic-section">
         <h3 className='font-sans text-xl'>BackEnd</h3>
-        <div className="bubble-container">
+        <div className="bubble-container text-blue-950">
           {topics.backEnd.map((topic, index) => (
             <div className="bubble" key={index}>{topic}</div>
           ))}
@@ -44,7 +44,7 @@ const CourseCover = () => {
 
       <div className="topic-section">
         <h3 className='font-sans text-xl'>DevOps</h3>
-        <div className="bubble-container">
+        <div className="bubble-container text-blue-950">
           {topics.devOps.map((topic, index) => (
             <div className="bubble" key={index}>{topic}</div>
           ))}

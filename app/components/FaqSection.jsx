@@ -73,11 +73,11 @@ const FaqSection = () => {
 
   return (
     <div id="faq" className="max-w-2xl mx-auto p-6 bg-green-50 rounded-lg shadow-lg">
-      <h1 className="text-2xl font-bold mb-4">Bootcamp FAQ</h1>
+      <h1 className="text-2xl font-bold mb-4 text-black">Bootcamp FAQ</h1>
       {faqData.map((item, index) => (
         <div key={index} className="mb-4 border rounded-lg border-gray-300">
           <div 
-            className={`flex justify-between items-center p-4 cursor-pointer transition-colors duration-200 ease-in-out ${openIndex === index ? 'bg-green-200' : 'bg-gray-100'}`} 
+            className={`flex justify-between items-center p-4 text-black cursor-pointer transition-colors duration-200 ease-in-out ${openIndex === index ? 'bg-green-200' : 'bg-gray-100'}`} 
             onClick={() => toggleAnswer(index)}
           >
             <span className="font-semibold">{item.question}</span>
