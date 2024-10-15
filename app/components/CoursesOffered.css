@@ -20,7 +20,7 @@
     border: 1px solid #28a745; /* Green border */
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   
     width: calc(100% - 40px);
     max-width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
@@ -28,7 +28,7 @@
   
   .course-card:hover {
     transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+
   }
   
   .price {
